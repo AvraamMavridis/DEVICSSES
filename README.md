@@ -11,7 +11,7 @@ For example the following SCSS for Sony Xperia Z1, Iphone6-Plus and Samsung-Gala
     width: 50px;
     height: 50px;
   }
-  @include iphone6-plus(portrait){
+  @include apple-Iphone6Plus(portrait){
     width: 60px;
     height: 60px;
   }
@@ -52,7 +52,7 @@ Another example using SASS for Ipad, Amazon Kindle Fire HDXX7
 .myclass
   margin-left: 0em
   margin-right: 0em
-  +ipad-retina(landscape)
+  +apple-IpadRetina(landscape)
     margin-left: 1.1em
     margin-right: 1.1em
 
@@ -103,7 +103,57 @@ Will generate
 | HTC Sensation | htc-Sensation($orientation)      | 
 | HTC EVO 3D | htc-Evo3d($orientation)      | 
 | LG Optimus | lg-Optimus($orientation)      | 
-| LG Optimus G| lg-OptimusG($orientation)      | 
+| LG Optimus G| lg-OptimusG($orientation)      |  
+| LG Optimus LTE| lg-OptimusLTE($orientation)      | 
+| LG Optimus Optimus One| lg-OptimusONE($orientation)      |
+| Motorola Defy | motorola-Defy($orientation)      | 
+| Motorola Droid| motorola-Droid($orientation)      | 
+| Motorola Milestone | motorola-Milestone($orientation)      | 
+| Motorola Droid 3| motorola-Droid3($orientation)      | 
+| Motorola Droid 4 | motorola-Droid4($orientation)      | 
+| Motorola Razr| motorola-Razr($orientation)      | 
+| Motorola Atrix| motorola-Atrix($orientation)      | 
+| Motorola Droid Razr HD | motorola-DroidRazrHD($orientation)      | 
+| Motorola Xoom| motorola-Xoom($orientation)      | 
+| Motorola Xyboard| motorola-Xyboard($orientation)      | 
+| Nokia C5| nokia-C5($orientation)      | 
+| Nokia C6 | nokia-C6($orientation)      | 
+| Nokia C7| nokia-C7($orientation)      | 
+| Nokia N97| nokia-N97($orientation)      | 
+| Nokia N8 | nokia-N8($orientation)      | 
+| Nokia X8| nokia-X8($orientation)      | 
+| Nokia Lumia7X0| nokia-Lumia7X0($orientation)      | 
+| Nokia Lumia 8XX | nokia-Lumia8XX($orientation)      | 
+| Nokia Lumia 900| nokia-Lumia900($orientation)      | 
+| Nokia Lumia N800| nokia-LumiaN800($orientation)      | 
+| Nokia Lumia N810 | nokia-LumiaN810($orientation)      | 
+| Nokia N900| nokia-LumiaN900($orientation)      | 
+| Samsung Galaxy Note| samsung-GalaxyNote($orientation)      | 
+| Samsung Galaxy Note 3| samsung-GalaxyNote3($orientation)      | 
+| Samsung Galaxy Note 2| samsung-GalaxyNote2($orientation)      | 
+| Samsung Galaxy S III| samsung-GalaxyS3($orientation)      | 
+| Samsung Galaxy Nexus | samsung-GalaxyNexus($orientation)      | 
+| Samsung Galaxy S| samsung-GalaxyS($orientation)      | 
+| Samsung Galaxy S II | samsung-GalaxyS2($orientation)      | 
+| Samsung Galaxy W| samsung-GalaxyW($orientation)      | 
+| Samsung Galaxy S IV| samsung-GalaxyS4($orientation)      | 
+| Samsung Galaxy Tab | samsung-GalaxyTab($orientation)      | 
+| Samsung Galaxy Tab 7.7"| samsung-GalaxyTab77($orientation)      |
+| Samsung Galaxy Tab 8.9"| samsung-GalaxyTab89($orientation)      | 
+| Samsung Galaxy Tab 10.1" | samsung-GalaxyTab101($orientation)      | 
+| Sony Xperia S| sony-XperiaS($orientation)      |
+| Samsung Ion | sony-Ion($orientation)      |
+| Sony Xperia Sola| sony-XperiaSola($orientation)      |
+| Sony Xperia U| sony-XperiaU($orientation)      |
+| Sony Xperia Z| sony-XperiaZ($orientation)      |
+| Sony Xperia Z1| sony-XperiaZ1($orientation)      |
+| Apple iPhone 3| apple-Iphone3($orientation)      |
+| Apple iPhone 4| apple-Iphone4($orientation)      |
+| Apple iPhone 5| apple-Iphone5($orientation)      |
+| Apple iPhone 6| apple-Iphone6($orientation)      |
+| Apple iPhone 6 Plus| apple-Iphone6Plus($orientation)      |
+| Apple iPad| apple-Ipad($orientation)      |
+| Apple iPad Retia| apple-IpadRetina($orientation)      |
 
-...list to be updated
+...more supported devices soon. Open for pull requests.
 

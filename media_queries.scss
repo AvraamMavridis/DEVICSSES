@@ -1,6 +1,5 @@
-//  Author: Avraam Mavridis
-//  Github: https://github.com/AvraamMavridis
-//  Email : avr.mav@gmail.com
+//  Author: Avraam
+// Screens
 
 @mixin screen($minimum_resolution, $maximum_resolution) {
   @media screen and (min-width: $minimum_resolution) and (max-width: $maximum_resolution) {
@@ -44,12 +43,12 @@
   $device_maximum_width: 1024px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -61,12 +60,12 @@
   $device_maximum_width: 1920px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -78,12 +77,12 @@
   $device_maximum_width: 2560px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -95,12 +94,12 @@
   $device_maximum_width: 600px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -112,12 +111,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -129,12 +128,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -146,12 +145,12 @@
   $device_maximum_width: 1280px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -163,12 +162,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 4;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -180,12 +179,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 3;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -197,12 +196,12 @@
   $device_maximum_width: 966px;
   $device_pixel_ratio: 1.32;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -214,12 +213,12 @@
   $device_maximum_width: 960px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -231,12 +230,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -247,12 +246,12 @@
   $device_minimum_width: 320px;
   $device_maximum_width: 533px;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -264,12 +263,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -281,12 +280,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -298,12 +297,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -315,12 +314,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -332,12 +331,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -349,12 +348,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -366,12 +365,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -383,12 +382,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -400,12 +399,12 @@
   $device_maximum_width: 753px;
   $device_pixel_ratio: 1.7;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -417,12 +416,12 @@
   $device_maximum_width: 320px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -434,12 +433,12 @@
   $device_maximum_width: 569px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -451,12 +450,12 @@
   $device_maximum_width: 569px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -468,12 +467,12 @@
   $device_maximum_width: 569px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -485,12 +484,12 @@
   $device_maximum_width: 960px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -502,12 +501,12 @@
   $device_maximum_width: 960px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -519,12 +518,12 @@
   $device_maximum_width: 960px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -536,12 +535,12 @@
   $device_maximum_width: 960px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -553,12 +552,12 @@
   $device_maximum_width: 1280px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -570,12 +569,12 @@
   $device_maximum_width: 1280px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -587,12 +586,12 @@
   $device_maximum_width: 1280px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -604,12 +603,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -621,12 +620,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -638,12 +637,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -655,12 +654,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -672,12 +671,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -689,12 +688,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -706,12 +705,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -723,12 +722,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -740,12 +739,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -757,12 +756,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -774,12 +773,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -791,12 +790,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -808,12 +807,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -825,12 +824,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 3;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -842,12 +841,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -859,12 +858,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -876,29 +875,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
-      @content;
-    }
-  }
-}
-
-// Samsung Galaxy Nexus
-@mixin samsung-GalaxyNexus($orientation: all) {
-  $device_minimum_width: 360px;
-  $device_maximum_width: 640px;
-  $device_pixel_ratio: 2;
-  @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
-      @content;
-    }
-  }
-  @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -910,12 +892,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -927,12 +909,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -944,12 +926,12 @@
   $device_maximum_width: 533px;
   $device_pixel_ratio: 1.5;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -961,12 +943,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 3;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -978,12 +960,12 @@
   $device_maximum_width: 1024px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -995,12 +977,12 @@
   $device_maximum_width: 1280px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -1012,12 +994,12 @@
   $device_maximum_width: 1280px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -1029,12 +1011,12 @@
   $device_maximum_width: 1280px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -1046,12 +1028,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -1063,12 +1045,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 2;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -1080,12 +1062,12 @@
   $device_maximum_width: 854px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -1097,12 +1079,12 @@
   $device_maximum_width: 854px;
   $device_pixel_ratio: 1;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -1114,12 +1096,12 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 3;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
@@ -1131,19 +1113,19 @@
   $device_maximum_width: 640px;
   $device_pixel_ratio: 3;
   @if $orientation == all {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
       @content;
     }
   }
   @else {
-    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
       @content;
     }
   }
 }
 
 // Iphone 3
-@mixin iphone3($orientation: all) {
+@mixin apple-Iphone3($orientation: all) {
   $device_minimum_width: 320px;
   $device_maximum_width: 480px;
   $device_pixel_ratio: 1;
@@ -1160,8 +1142,7 @@
 }
 
 // Iphone4 retina
-
-@mixin iphone4($orientation: all) {
+@mixin apple-Iphone4($orientation: all) {
   $device_minimum_width: 320px;
   $device_maximum_width: 480px;
   $device_pixel_ratio: 2;
@@ -1179,8 +1160,7 @@
 }
 
 // Iphone 5
-
-@mixin iphone5($orientation: all) {
+@mixin apple-Iphone5($orientation: all) {
   $device_minimum_width: 320px;
   $device_maximum_width: 568px;
   $device_pixel_ratio: 2;
@@ -1199,7 +1179,7 @@
 
 // Iphone 6
 
-@mixin iphone6($orientation: all) {
+@mixin apple-Iphone6($orientation: all) {
   $device_minimum_width: 375px;
   $device_maximum_width: 667px;
   $device_pixel_ratio: 2;
@@ -1217,7 +1197,7 @@
 
 // Iphone 6 Plus
 
-@mixin iphone6-plus($orientation: all) {
+@mixin apple-Iphone6Plus($orientation: all) {
   $device_minimum_width: 414px;
   $device_maximum_width: 736px;
   $device_pixel_ratio: 3;
@@ -1234,7 +1214,7 @@
 }
 
 // Ipads
-@mixin ipad($orientation: all) {
+@mixin apple-Ipad($orientation: all) {
   $device_minimum_width: 768px;
   $device_maximum_width: 1024px;
   @if $orientation == all {
@@ -1250,7 +1230,7 @@
 }
 
 // Ipads retina
-@mixin ipad-retina($orientation: all) {
+@mixin apple-IpadRetina($orientation: all) {
   $device_minimum_width: 768px;
   $device_maximum_width: 1024px;
   $device_pixel_ratio: 2;
