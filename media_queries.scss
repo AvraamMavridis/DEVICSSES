@@ -1,0 +1,1267 @@
+//  Author: Avraam Mavridis
+//  Github: https://github.com/AvraamMavridis
+//  Email : avr.mav@gmail.com
+
+@mixin screen($minimum_resolution, $maximum_resolution) {
+  @media screen and (min-width: $minimum_resolution) and (max-width: $maximum_resolution) {
+    @content;
+  }
+}
+
+@mixin max-screen($resolution) {
+  @media screen and (max-width: $resolution) {
+    @content;
+  }
+}
+
+@mixin min-screen($resolution) {
+  @media screen and (min-width: $resolution) {
+    @content;
+  }
+}
+
+@mixin screen-height($minimum_resolution, $maximum_resolution) {
+  @media screen and (min-height: $minimum_resolution) and (max-height: $maximum_resolution) {
+    @content;
+  }
+}
+
+@mixin max-screen-height($resolution) {
+  @media screen and (max-height: $resolution) {
+    @content;
+  }
+}
+
+@mixin min-screen-height($resolution) {
+  @media screen and (min-height: $resolution) {
+    @content;
+  }
+}
+
+// Amazon Kindle Fire (First)
+@mixin amazon-KindleFire1($orientation: all) {
+  $device_minimum_width: 600px;
+  $device_maximum_width: 1024px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Amazon Kindle Fire HDX 7"
+@mixin amazon-KindleFireHDX7($orientation: all) {
+  $device_minimum_width: 1200px;
+  $device_maximum_width: 1920px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Amazon Kindle Fire HDX 8.9"
+@mixin amazon-KindleFireHDX89($orientation: all) {
+  $device_minimum_width: 1600px;
+  $device_maximum_width: 2560px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Blackberry Playbook
+@mixin blackberyy-Playbook($orientation: all) {
+  $device_minimum_width: 1024px;
+  $device_maximum_width: 600px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Blackberry Z10
+@mixin blackberyy-Z10($orientation: all) {
+  $device_minimum_width: 384px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Blackberry Z30
+@mixin blackberyy-Z30($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Google Nexus
+@mixin google-Nexus10($orientation: all) {
+  $device_minimum_width: 800px;
+  $device_maximum_width: 1280px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Google Nexus 4
+@mixin google-Nexus4($orientation: all) {
+  $device_minimum_width: 384px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 4;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Google Nexus 5
+@mixin google-Nexus5($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 3;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Google Nexus 7
+@mixin google-Nexus7($orientation: all) {
+  $device_minimum_width: 604px;
+  $device_maximum_width: 966px;
+  $device_pixel_ratio: 1.32;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Google Nexus 7 2
+@mixin google-Nexus72($orientation: all) {
+  $device_minimum_width: 600px;
+  $device_maximum_width: 960px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Google Nexus S
+@mixin google-NexusS($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// HTC DESIRE
+@mixin htc-Desire($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// HTC EVO
+@mixin htc-Evo($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// HTC TOUCH
+@mixin htc-Touch($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// HTC ONE-X
+@mixin htc-OneX($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// HTC ONE-X
+@mixin htc-Evo-Lte($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// HTC Sensation
+@mixin htc-Sensation($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// HTC Evo3D
+@mixin htc-Evo3d($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// LG Optimus
+@mixin lg-Optimus($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// LG Optimus G
+@mixin lg-OptimusG($orientation: all) {
+  $device_minimum_width: 384px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// LG Optimus LTE
+@mixin lg-OptimusLTE($orientation: all) {
+  $device_minimum_width: 424px;
+  $device_maximum_width: 753px;
+  $device_pixel_ratio: 1.7;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// LG Optimus ONE
+@mixin lg-OptimusONE($orientation: all) {
+  $device_minimum_width: 213px;
+  $device_maximum_width: 320px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Defy
+@mixin motorola-Defy($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 569px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Droid
+@mixin motorola-Droid($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 569px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Milestone
+@mixin motorola-Milestone($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 569px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Droid3
+@mixin motorola-Droid3($orientation: all) {
+  $device_minimum_width: 540px;
+  $device_maximum_width: 960px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Droid4
+@mixin motorola-Droid4($orientation: all) {
+  $device_minimum_width: 540px;
+  $device_maximum_width: 960px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Razr
+@mixin motorola-Razr($orientation: all) {
+  $device_minimum_width: 540px;
+  $device_maximum_width: 960px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Atrix
+@mixin motorola-Atrix($orientation: all) {
+  $device_minimum_width: 540px;
+  $device_maximum_width: 960px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Droid Razr HD
+@mixin motorola-DroidRazrHD($orientation: all) {
+  $device_minimum_width: 720px;
+  $device_maximum_width: 1280px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Xoom
+@mixin motorola-Xoom($orientation: all) {
+  $device_minimum_width: 800px;
+  $device_maximum_width: 1280px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Motorola Xyboard
+@mixin motorola-Xyboard($orientation: all) {
+  $device_minimum_width: 800px;
+  $device_maximum_width: 1280px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia C5
+@mixin nokia-C5($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia C6
+@mixin nokia-C6($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia C7
+@mixin nokia-C7($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia N97
+@mixin nokia-N97($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia N8
+@mixin nokia-N8($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia X7
+@mixin nokia-X8($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia Lumia 7X0
+@mixin nokia-Lumia7X0($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia Lumia 8XX
+@mixin nokia-Lumia8XX($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia Lumia 900
+@mixin nokia-Lumia900($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia Lumia N800
+@mixin nokia-LumiaN800($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia Lumia N810
+@mixin nokia-LumiaN810($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Nokia Lumia N900
+@mixin nokia-LumiaN900($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Note
+@mixin samsung-GalaxyNote($orientation: all) {
+  $device_minimum_width: 400px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Note 3
+@mixin samsung-GalaxyNote3($orientation: all) {
+  $device_minimum_width: 400px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 3;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Note II
+@mixin samsung-GalaxyNote2($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy S III
+@mixin samsung-GalaxyS3($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Nexus
+@mixin samsung-GalaxyNexus($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Nexus
+@mixin samsung-GalaxyNexus($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy S
+@mixin samsung-GalaxyS($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy S2
+@mixin samsung-GalaxyS2($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy W
+@mixin samsung-GalaxyW($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 533px;
+  $device_pixel_ratio: 1.5;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy S4
+@mixin samsung-GalaxyS4($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 3;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Tab
+@mixin samsung-GalaxyTab($orientation: all) {
+  $device_minimum_width: 600px;
+  $device_maximum_width: 1024px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Tab 7.7
+@mixin samsung-GalaxyTab77($orientation: all) {
+  $device_minimum_width: 800px;
+  $device_maximum_width: 1280px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Tab 8.9
+@mixin samsung-GalaxyTab89($orientation: all) {
+  $device_minimum_width: 800px;
+  $device_maximum_width: 1280px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Samsung Galaxy Tab 10.1
+@mixin samsung-GalaxyTab101($orientation: all) {
+  $device_minimum_width: 800px;
+  $device_maximum_width: 1280px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Sony Xperia S
+@mixin sony-XperiaS($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Sony Ion
+@mixin sony-Ion($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Sony Xperia Sola
+@mixin sony-XperiaSola($orientation: all) {
+  $device_minimum_width: 480px;
+  $device_maximum_width: 854px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Sony Xperia U
+@mixin sony-XperiaU($orientation: all) {
+  $device_minimum_width: 480px;
+  $device_maximum_width: 854px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Sony Xperia Z
+@mixin sony-XperiaZ($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 3;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Sony Xperia Z1
+@mixin sony-XperiaZ1($orientation: all) {
+  $device_minimum_width: 360px;
+  $device_maximum_width: 640px;
+  $device_pixel_ratio: 3;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Iphone 3
+@mixin iphone3($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 480px;
+  $device_pixel_ratio: 1;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Iphone4 retina
+
+@mixin iphone4($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 480px;
+  $device_pixel_ratio: 2;
+  $deviceAspectRatio: "2/3";
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (device-aspect-ratio: $deviceAspectRatio) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (device-aspect-ratio: 2 / 3) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Iphone 5
+
+@mixin iphone5($orientation: all) {
+  $device_minimum_width: 320px;
+  $device_maximum_width: 568px;
+  $device_pixel_ratio: 2;
+  $deviceAspectRatio: "40/71";
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (device-aspect-ratio: $deviceAspectRatio) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (device-aspect-ratio: $deviceAspectRatio) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Iphone 6
+
+@mixin iphone6($orientation: all) {
+  $device_minimum_width: 375px;
+  $device_maximum_width: 667px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Iphone 6 Plus
+
+@mixin iphone6-plus($orientation: all) {
+  $device_minimum_width: 414px;
+  $device_maximum_width: 736px;
+  $device_pixel_ratio: 3;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Ipads
+@mixin ipad($orientation: all) {
+  $device_minimum_width: 768px;
+  $device_maximum_width: 1024px;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
+
+// Ipads retina
+@mixin ipad-retina($orientation: all) {
+  $device_minimum_width: 768px;
+  $device_maximum_width: 1024px;
+  $device_pixel_ratio: 2;
+  @if $orientation == all {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) {
+      @content;
+    }
+  }
+  @else {
+    @media only screen and (min-device-width: $device_minimum_width) and (max-device-width: $device_maximum_width) and (-webkit-device-pixel-ratio: $device_pixel_ratio) and (orientation: #{$orientation}) {
+      @content;
+    }
+  }
+}
