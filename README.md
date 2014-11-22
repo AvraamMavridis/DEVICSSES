@@ -1,4 +1,4 @@
-# DEVICCSES
+# DEVICSSES
 
 SASS/SCSS mixins to generate CSS for the most popular devices. 
 
@@ -47,7 +47,7 @@ Will generate the appropriate CSS for these devices
 }
 ```
 
-Another example using SASS for Ipad, Samsung Tab
+Another example using SASS for Ipad, Amazon Kindle Fire HDXX7
 ```sass
 .myclass
   margin-left: 0em
@@ -104,4 +104,6 @@ Will generate
 | HTC EVO 3D | htc-Evo3d($orientation)      | 
 | LG Optimus | lg-Optimus($orientation)      | 
 | LG Optimus G| lg-OptimusG($orientation)      | 
+
+...list to be updated
 
